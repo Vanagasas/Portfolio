@@ -73,5 +73,16 @@ $(document).ready(function(){
             scrollTop: $("#contact").offset().top
         }, 500);
     })
+    $('.language-change').click(function(){
+        var attr = $(this).attr('name');
+        if (attr == 'en'){
+            $('.lt').fadeOut(500);
+            $('.en').delay(500).fadeIn(500);
+        }
+        else if (attr == 'lt'){
+            $('.en').fadeOut(500);
+            $('.lt').delay(500).fadeIn(500);
+        }
+    })
 
 });

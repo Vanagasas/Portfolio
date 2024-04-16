@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar">
+    <nav class="en navbar">
+        <a class="language-change" name="lt">EN | LT</a>
         <a class="nav-button" name="home">Home</a>
         <a class="nav-button" name="about">About Me</a>
         <a class="nav-button" name="projects">Projects</a>
@@ -22,15 +23,31 @@
         <a class="nav-button" name="skills">Skills</a>
         <a class="nav-button" name="contact">Contact</a>
         <a class="nav-hire">Hire Me!</a>
+        
+    </nav>
+    <nav class="lt navbar">
+        <a class="language-change" name="en">EN | LT</a>
+        <a class="nav-button" name="home">Pradžia</a>
+        <a class="nav-button" name="about">Apie Mane</a>
+        <a class="nav-button" name="projects">Projektai</a>
+        <a class="nav-button" name="experience">Patirtis</a>
+        <a class="nav-button" name="skills">Įgūdžiai</a>
+        <a class="nav-button" name="contact">Kontaktai</a>
+        <a class="nav-hire">Pasamdyk!</a>
     </nav>
     <main id="home">
         <div class="main-container">
-            <h2>I'm Audrius Vanagas</h2>
-            <h1 class="text-gradient">Back End Developer +</h1>
-            <h1 class="text-gradient">Front End Developer</h1>
-            <p>I'm an aspiring back-end developer with a strong foundation in front-end. After taking a break from developing, I've been eager to get back to the field. To do so I've been improving on daily baisis to meet expectations and bring more to the table.</p>
+            <h2 class="en">I'm Audrius Vanagas</h2>
+            <h2 class="lt">Aš esu Audrius Vanagas</h2>
+            <h1 class="en text-gradient">Back End Developer +</h1>
+            <h1 class="lt text-gradient">Back End Programuotojas +</h1>
+            <h1 class="en text-gradient">Front End Developer</h1>
+            <h1 class="lt text-gradient">Front End Programuotojas</h1>
+            <p class="en">I'm an aspiring back-end developer with a strong foundation in front-end. After taking a break from developing, I've been eager to get back to the field. To do so I've been improving on daily baisis to meet expectations and bring more to the table.</p>
+            <p class="lt">Aš siekiu tapti back-end programuotoju tačiau turiu stiprius pamatus front-end. Po pertraukos nuo programavimo, užsibrėžiau tikslą grįžti į savo sritį. Norint pasiekti šį tikslą mokausi prie to kiekvieną dieną, kad tobulėčiau bei daugiau galėčiau ką padaryti</p>
             <div class="info">
-                <a target="_blank" href="https://www.cvbankas.lt/perziureti-mano-cv-1786747128.html" class="text-gradient info-button">My CV</a>
+                <a target="_blank" href="https://www.cvbankas.lt/perziureti-mano-cv-1786747128.html" class="en text-gradient info-button">My CV</a>
+                <a target="_blank" href="https://www.cvbankas.lt/perziureti-mano-cv-1786747128.html" class="lt text-gradient info-button">Mano CV</a>
                 <a target="_blank" href="https://github.com/Vanagasas" class="info-button"><i class="text-gradient fa-brands fa-github"></i></a>
                 <a target="_blank" href="https://www.linkedin.com/in/audrius-vanagas-b3b627134/" class="info-button"><i class="text-gradient fa-brands fa-linkedin-in"></i></a>
 
@@ -41,32 +58,45 @@
         </div>
     </main>
     <div id="about">
-        <h1 class="about-header text-gradient">About Me</h1>
+        <h1 class="en about-header text-gradient">About Me</h1>
+        <h1 class="lt about-header text-gradient">Apie Me</h1>
+
         <div>
             <div class="about-text about-active">
-                <h3>Front-end Developer</h3>
-                <p>I have a decently strong fundamentals in this field and feel comfortable enough to replicate most of the designs while additionally with extra research I can build a great design which will fit the brand</p>
+                <h3 class="en">Front-end Developer</h3>
+                <h3 class="lt">Front-end Programuotojas</h3>
+                <p class="en">I have a decently strong fundamentals in this field and feel comfortable enough to replicate most of the designs while additionally with extra research I can build a great design which will fit the brand</p>
+                <p class="lt">Turiu stiprius pamatus šioje srityje ir jaučiuosi pakankamai patogiai, kad galėčiau atkartoti daugumą dizainų, tačiau su papildomu tyrimu galiu sukurti puikų dizainą, kuris atitiks prekės ženklą</p>
             </div>
             <div class="about-text">
-                <h3>PHP Developer</h3>
-                <p>Currently in this field I'm mostly capable working with PHP although I'm starting to learn Symfony. My current skills with PHP are sufficient for most of the projects yet current ones lack protection from SQL injections and more efficient use of OOP which both will be the aim to improve upon in the next project I'm working on.</p>
+                <h3 class="en">PHP Developer</h3>
+                <h3 class="lt">PHP Programuotojas</h3>
+                <p class="en">Currently in this field I'm mostly capable working with PHP although I'm starting to learn Symfony. My current skills with PHP are sufficient for most of the projects yet current ones lack protection from SQL injections and more efficient use of OOP which both will be the aim to improve upon in the next project I'm working on.</p>
+                <p class="lt">Šiuo metu šioje srityje esu pajėgus dirbti su PHP tačiau pradedu mokytis Symfony. Mano dabartiniai įgūdžiai su PHP yra pakankami daugumai projektų, tačiau dabartiniai trūkumai yra apsauga nuo SQL injekcijų ir efektyvesnis OOP naudojimas, kurie bus mano tikslas tobulinti sekančiame projekte.</p>
             </div>
             <div class="about-text">
-                <h3>Back-end Developer</h3>
-                <p>In overall I have great fundamentals with MYSQL and how databases work. I'm well informed how relational databases work and their selectors to reiceive necessary data.</p>
+                <h3 class="en">Back-end Developer</h3>
+                <h3 class="lt">Back-end Programuotojas</h3>
+                <p class="en">In overall I have great fundamentals with MYSQL and how databases work. I'm well informed how relational databases work and their selectors to reiceive necessary data.</p>
+                <p class="lt">Bendrai turiu stiprius pamatus su MYSQL ir kaip veikia duomenų bazės. Esu gerai informuotas kaip veikia reliacinės duomenų bazės ir jų selektoriai, kad gauti reikiamus duomenis.</p>
             </div>
             <div class="about-text">
-                <h3>Aspirations</h3>
-                <p>In the future I have currently 2 aspications which I want to improve upon - Cloud Development and Application Development. Although, my skillset for it currently isn&#39;t great, I would like to improve upon them to widen up my skillset and further help development process</p>
+                <h3 class="en">Aspirations</h3>
+                <h3 class="lt">Siekimai</h3>
+                <p class="en">In the future I have currently 2 aspications which I want to improve upon - Cloud Development and Application Development. Although, my skillset for it currently isn&#39;t great, I would like to improve upon them to widen up my skillset and further help development process</p>
+                <p class="lt">Ateityje turiu 2 siekimus, kuriuos norėčiau tobulinti - Cloud programavimas ir aplikacijų programavimas. Nors mano įgūdžiai šioje srityje nėra geri, tačiau norėčiau juos tobulinti, kad išplėčiau savo įgūdžių rinkinį ir toliau padėčiau programavimo procese.</p>
             </div>
         </div>
     </div>
     <div id="projects">
-        <h1 class="projects-header text-gradient">My Projects</h1>
+        <h1 class="en projects-header text-gradient">My Projects</h1>
+        <h1 class="lt projects-header text-gradient">Mano Projektai</h1>
         <div class="projects-container">
             <div class="projects-img-container">
                 <div class="overlay">
-                    <h3>Freelancing job market</h3>
+                    <h3 class="en">Freelancing job market</h3>
+                    <h3 class="lt">Freelancerių darbų rinka</h3>
+
                     <div>
                         <a target="_blank" href="https://github.com/Vanagasas/Weatherapp"><i class="overlay-icons fa-brands fa-github"></i></a>
                         <i class="overlay-icons fa-solid fa-expand"></i>
@@ -76,7 +106,8 @@
             </div>
             <div class="projects-img-container">
                 <div class="overlay">
-                    <h3>Website for self improvement to see results and track progress</h3>
+                    <h3 class="en">Website for self improvement to see results and track progress</h3>
+                    <h3 class="lt">Svetainė savęs tobulinimui, kad matytum rezultatus ir stebėtum pažangą</h3>
                     <div>
                         <a target="_blank" href="https://github.com/Vanagasas/efficientScape"><i class="overlay-icons fa-brands fa-github"></i></a>
                         <i class="overlay-icons fa-solid fa-expand"></i>
@@ -86,7 +117,8 @@
             </div>
             <div class="projects-img-container">
                 <div class="overlay">
-                    <h3>Weather App</h3>
+                    <h3 class="en">Weather App</h3>
+                    <h3 class="lt">Orų prognozės</h3>
                     <div>
                         <a target="_blank" href="https://github.com/Vanagasas/Weatherapp"><i class="overlay-icons fa-brands fa-github"></i></a>
                         <i class="overlay-icons fa-solid fa-expand"></i>
@@ -98,43 +130,53 @@
         </div>
     </div>
     <div id="experience">
-        <h1 class="experience-header text-gradient">Experience</h1>
+        <h1 class="en experience-header text-gradient">Experience</h1>
+        <h1 class="lt experience-header text-gradient">Patirtis</h1>
         <div class="experience-container">
             <div class="education">
-                <h2 class="experience-text text-gradient">Education</h2>
+                <h2 class="en experience-text text-gradient">Education</h2>
+                <h2 class="lt experience-text text-gradient">Išsilavinimas</h2>
                 <div class="experience-text-container">
                     <h3 class="text-gradient">2017 - 2021</h3>
-                    <h4>Computing Technologies</h4>
-                    <p>University of Roehampton</p>
+                    <h4 class="en">Computing Technologies</h4>
+                    <h4 class="lt">Kompiuterinės Technologijos</h4>
+                    <p class="en">University of Roehampton</p>
+                    <p class="lt">Roehampton Universitetas</p>
                 </div>
                 <div class="experience-text-container">
                     <h3 class="text-gradient">300h</h3>
-                    <h4>JavaScript Algorithms and Data Structures</h4>
+                    <h4 class="en">JavaScript Algorithms and Data Structures</h4>
+                    <h4 class="lt">JavaScript Algoritmai ir Duomenų Struktūros</h4>
                     <p>FreeCodeCamp</p>
                 </div>
                 <div class="experience-text-container">
                     <h3 class="text-gradient">300h</h3>
-                    <h4>Responsive Web Design</h4>
+                    <h4 class="en">Responsive Web Design</h4>
+                    <h4 class="lt">Adaptyvus Dizainas</h4>
                     <p>FreeCodeCamp</p>
                 </div>
                 <div class="experience-text-container">
                     <h3 class="text-gradient">300h</h3>
-                    <h4>Web Programming</h4>
+                    <h4 class="en">Web Programming</h4>
+                    <h4 class="lt">Web Programavimas</h4>
                     <p>Baltic Talents</p>
                 </div>
             </div>
             <div class="work">
-                <h2 class="experience-text text-gradient">Work Experience</h2>
+                <h2 class="en experience-text text-gradient">Work Experience</h2>
+                <h2 class="lt experience-text text-gradient">Darbo Patirtis</h2>
                 <div class="experience-text-container">
                     <h3 class="text-gradient">2017 - 2017</h3>
-                    <h4>Front-end Development</h4>
+                    <h4 class="en">Front-end Development</h4>
+                    <h4 class="lt">Front-end Programavimas</h4>
                     <p>Tandem Studio</p>
                 </div>
             </div>
         </div>
     </div>
     <div id="skills">
-        <h1 class="skills-header text-gradient">Skills</h1>
+        <h1 class="en skills-header text-gradient">Skills</h1>
+        <h1 class="lt skills-header text-gradient">Įgūdžiai</h1>
         <div class="skills-container">
             <div class="skill">
                 <i class="fa-brands fa-js"></i>
@@ -163,19 +205,24 @@
         </div>
     </div>
     <div id="contact">
-        <h1 class="contact-header text-gradient">Contact</h1>
+        <h1 class="en contact-header text-gradient">Contact</h1>
+        <h1 class="lt contact-header text-gradient">Kontaktai</h1>
         <div class="contact-container">
             <div class="contact-text">
-                <h3>Phone</h3>
+                <h3 class="en">Phone</h3>
+                <h3 class="lt">Telefonas</h3>
                 <h2>+370 623 76075</h2>
             </div>
             <div class="contact-text">
-                <h3>Email</h3>
+                <h3 class="en">Email</h3>
+                <h3 class="lt">El. Paštas</h3>
                 <h2>audrius.vanagasa@gmail.com</h2>
             </div>
             <div class="contact-text">
-                <h3>Address</h3>
-                <h2>Vilnius, Lithuania</h2>
+                <h3 class="en">Address</h3>
+                <h3 class="lt">Adresas</h3>
+                <h2 class="en">Vilnius, Lithuania</h2>
+                <h2 class="lt">Vilnius, Lietuva</h2>
             </div>
         </div>
     </div>
