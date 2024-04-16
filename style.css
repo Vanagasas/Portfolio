@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --primary-color: #180330;
+    --secondary-color: #2b0359;
+    --light-primary-color: #45078c;
+    --light-secondary-color: #9c5bfc;
+    --dark-primary-color: #0d0221;
+    --dark-secondary-color: #1c033e;
+
+
+
+}
+@property --first-color{
+    syntax: '<color>';
+    initial-value: #45078c;
+    inherits: false;
+}
+@property --second-color{
+    syntax: '<color>';
+    initial-value: #9c5bfc;
+    inherits: false;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: var(--secondary-color);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var( --light-primary-color);
+  }
+
+body{
+    background-image: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/* Navigation section */
+
+nav{
+    padding: 2em;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+.nav-button{
+    padding: 1em;
+    background-image: linear-gradient(#fff 0 0);
+    background-position: 0 100%;
+    background-size: 0% 2px;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+.nav-button:hover{
+    background-position: 100% 100%;
+    background-size: 100% 2px;
+}
+.nav-hire{
+    padding: 1em;
+    background-image: linear-gradient(to right, var(--first-color), var(--second-color));
+    border-radius: 2em;
+    transition: --first-color .5s, --second-color .5s;
+}
+.nav-hire:hover{
+    --first-color: var(--light-secondary-color);
+    --second-color: var(--light-primary-color);
+}
+
+/* Main content section */
+
+main{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3em;
+    padding: 0 3em;
+    height: 100%;
+}
+.main-container > h1{
+    padding: .2em 0;
+    font-size: 2.5em;
+}
+.text-gradient{
+    background-image: linear-gradient(to right, var(--second-color), #fff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.info{
+    padding: 1.5em 0;
+}
+.info-button{
+    border: 2px solid var(--light-primary-color);
+    padding: .5em 1em;
+    font-size: 1.25em;
+    border-radius: 2em;
+    margin: 0 .1em;
+    transition: .5s;
+}
+.info-button:hover{
+    background-image: none;
+    background-clip: border-box;
+    background-color: var(--light-primary-color);
+    color: #fff;
+}
+.info-button:hover > i{
+    color: #fff;
+}
+#my-image{
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    border-radius: 20%;
+    box-shadow: 0 0 1em #000;
+    transform: rotate(5deg);
+    border: 1px solid var( --light-primary-color);
+}
+
+/* About me section */
+
+#about{
+    background-image: linear-gradient(45deg, var(--dark-primary-color), var(--dark-secondary-color));
+    display: grid;
+    place-items: center;
+}
+.about-text{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 1em 3em;
+    min-height: 4em;
+    cursor: default;
+    transition: .5s;
+}
+.about-active{
+    background-color: var(--light-primary-color);
+
+}
+
+/* Projects section */
+
+#projects > h1{
+    text-align: center;
+    padding: 2em 0;
+}
+.projects-container{
+    display: grid;
+    grid-gap: .5em;
+    grid-template:
+        'main main'
+        'main main';
+}
+.projects-img-container{
+    position: relative;
+    
+}
+.projects-img-container:first-child{
+    grid-area: main;
+    width: 100%;
+}
+
+.projects-img{
+    width: 100%;
+    margin: auto;
+    box-shadow: 0 5px 10px #000;
+}
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    text-align: center;
+    transition: .5s;
+}
+.projects-img-container:hover .overlay{
+    opacity: .8;
+
+}
+.projects-img-container:first-child .overlay{
+    height: 20%;
+}
+.projects-img-container:first-child .overlay > div > .fa-expand{
+    display: none;
+
+}
+.overlay-icons{
+    padding: 1em;
+    font-size: 2em;
+    cursor: pointer;
+}
+.overlay-icons:hover{
+    color: var(--light-secondary-color);
+}
+
+/* Experience */
+
+#experience{
+    background-image: linear-gradient(45deg, var(--dark-primary-color), var(--dark-secondary-color));
+}
+#experience > h1{
+    text-align: center;
+    padding: 2em 0;
+}
+.experience-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2em;
+    padding: 2em;
+}
+.education > h2, .work > h2{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2em;
+}
+.experience-text-container{
+    width: 80%;
+    background-color: var(--secondary-color);
+    padding: 1em;
+    border-radius: .5em;
+    box-shadow: 0 0 10px var(--light-primary-color);
+    margin: 2em auto;
+    transition: .5s;
+    position: relative;
+    border: 1px solid var( --light-primary-color);
+
+}
+.experience-text-container *{
+    padding: .2em 0;
+}
+.experience-text-container:hover{
+    background-color: var(--light-primary-color);
+}
+
+/* Skills */
+
+#skills > h1{
+    text-align: center;
+    padding: 2em 0;
+}
+.skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 2em 0 5em;
+
+}
+.skill{
+    display: grid;
+    text-align: center;
+    align-items: end;
+    width: 10%;
+    height: 10em;
+    background-color: var(--light-primary-color);
+    margin: .5em;
+    border-radius: 1em;
+    transition: .5s;
+    box-shadow: 0 0 10px var(--light-primary-color);
+}
+.skill:hover{
+    background-color: var(--light-secondary-color);
+    box-shadow: 0 0 10px var(--light-secondary-color);
+}
+.skill > i{
+    font-size: 5em;
+    transition: .5s;
+}
+.skill:hover > i{
+    color: var(--light-primary-color)
+}
+
+/* Contact */
+
+#contact{
+    background-image: linear-gradient(45deg, var(--dark-primary-color), var(--dark-secondary-color));
+}
+#contact > h1{
+    text-align: center;
+    padding: 2em 0;
+}
+.contact-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em 0 5em;
+}
+.contact-text{
+    text-align: center;
+    border-radius: 1em;
+    padding: 5em 2em;
+    transition: .5s;
+    box-shadow: 0 0 10px var(--light-primary-color);
+    border: 1px solid var( --light-primary-color);
+
+}
+.contact-text:hover{
+    background-color: var(--second-color);
+}
+footer{
+    text-align: center;
+    padding: 2em 0;
+
+
+}
+
+
