@@ -383,6 +383,10 @@ footer{
         border-radius: 0;
         border: none;
     }
+    .contact-text > h2{
+        font-size: 1.2em;
+    }
+
 
 
 }
