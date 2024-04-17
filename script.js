@@ -46,7 +46,6 @@ $(document).ready(function(){
             scrollAnimation('.experience-header', '.experience-text-container', '.experience-text');
             experienceAnimation = 1;
         }
-
     });
 
     // Function to animate content on scroll
@@ -144,4 +143,5 @@ $(document).ready(function(){
             }
         }
     })
+
 });

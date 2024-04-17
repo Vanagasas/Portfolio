@@ -357,8 +357,8 @@ footer{
     #about{
         padding: 2em 0;
     }
-    #about > div{
-        padding-top: 2em;
+    .about-header{
+        padding: 2em;
     }
     .about-text > p{
         padding-left: 1em;
@@ -380,15 +380,35 @@ footer{
     .overlay > div > .fa-expand{
         display: none;
     }
+    .experience-container{
+        display: block;
+    }
     .contact-text{
         border-radius: 0;
         border: none;
+        margin: 1em 0;
+
     }
     .contact-text > h2{
         font-size: 1.2em;
     }
-
-
-
+    .about-fed > span{
+        display: none;
+    }
+    .about-fed:after{
+        content: 'Front-End';
+    }
+    .about-php > span{
+        display: none;
+    }
+    .about-php:after{
+        content: 'PHP';
+    }
+    .about-bed > span{
+        display: none;
+    }
+    .about-bed:after{
+        content: 'Back-End';
+    }
 }
 
