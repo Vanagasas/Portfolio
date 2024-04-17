@@ -88,7 +88,9 @@ a{
     --first-color: var(--light-secondary-color);
     --second-color: var(--light-primary-color);
 }
-
+.phone-menu{
+    display: none;
+}
 
 /* Main content section */
 
@@ -196,14 +198,13 @@ main{
     place-items: center;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: var(--light-primary-color);
     opacity: 0;
     text-align: center;
     transition: .5s;
 }
 .projects-img-container:hover .overlay{
     opacity: .8;
-
 }
 .projects-img-container:first-child .overlay{
     height: 20%;
@@ -279,6 +280,7 @@ main{
     text-align: center;
     align-items: end;
     width: 10%;
+    min-width: 7em;
     height: 10em;
     background-color: var(--light-primary-color);
     margin: .5em;
@@ -309,13 +311,16 @@ main{
 }
 .contact-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 2em 0 5em;
 }
 .contact-text{
+    width: 25em;
     text-align: center;
     border-radius: 1em;
-    padding: 5em 2em;
+    padding: 5em 1em;
+    margin: 2em 0;
     transition: .5s;
     box-shadow: 0 0 10px var(--light-primary-color);
     border: 1px solid var( --light-primary-color);
@@ -329,5 +334,56 @@ footer{
 }
 .lt{
     display: none;
+}
+@media only screen and (max-width: 801px) {
+    nav{
+        backdrop-filter: blur(0);
+    }
+    .phone-menu{
+        display: block;
+    }
+    .nav-button, .nav-hire, .language-change{
+        display: none;
+    }
+    main{
+        grid-template-columns: auto;
+        place-content: center;
+        padding-top: 3em;
+    }
+    #my-image{
+        display: none;
+    }
+    #about{
+        padding: 2em 0;
+    }
+    #about > div{
+        padding-top: 2em;
+    }
+    .about-text > p{
+        padding-left: 1em;
+    }
+
+    .overlay{
+        display: none;
+    }
+    .projects-img-container:hover .overlay{
+        display: none;
+        opacity: 0;
+    }
+    .projects-img-container:first-child .overlay{
+        height: 100%;
+    }
+    .projects-container{
+        display: block;
+    }
+    .overlay > div > .fa-expand{
+        display: none;
+    }
+    .contact-text{
+        border-radius: 0;
+        border: none;
+    }
+
+
 }
 
