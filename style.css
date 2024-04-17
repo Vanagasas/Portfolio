@@ -289,7 +289,7 @@ main{
     box-shadow: 0 0 10px var(--light-primary-color);
 }
 .skill:hover{
-    background-color: var(--light-secondary-color);
+    
     box-shadow: 0 0 10px var(--light-secondary-color);
 }
 .skill > i{
@@ -297,7 +297,8 @@ main{
     transition: .5s;
 }
 .skill:hover > i{
-    color: var(--light-primary-color)
+    font-size: 5.2em;
+    color: var(--light-secondary-color)
 }
 
 /* Contact */
